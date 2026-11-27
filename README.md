@@ -1,41 +1,51 @@
-## Hi, I'm Dmytro Honchar
+# Hi, I'm Dmytro Honchar 👋
 
-I'm a software developer based in Liverpool. I build web applications with Python and JavaScript. My recent work includes an AI booking concierge, a Python framework for evaluating language models and websites for restaurant clients.
+I'm a software developer based in Liverpool. For my MSc in Computer Science at the University of Liverpool, I built a system where five language models debate each other's answers. I also built Manos, an AI assistant that finds local service providers and creates bookings through chat, and I've built and launched websites for two restaurant clients. I use Codex and Claude Code in my daily workflow.
 
-I'm looking for junior and graduate software roles across the UK, including Manchester, in Python, full-stack or applied AI development, and I'm open to remote or hybrid work.
+I'm looking for a junior or graduate software development role in the UK, particularly in full-stack development, backend engineering or applied AI. I'm open to remote and hybrid work.
 
-[Portfolio](https://getdima.co.uk) · [LinkedIn](https://www.linkedin.com/in/dmytro-honchar-26b308239/)
+[Portfolio](https://getdima.co.uk/) · [LinkedIn](https://www.linkedin.com/in/dmytro-honchar-26b308239/)
 
-**Background:** I studied Computer Science at the University of Liverpool for my MSc (2025–2026). I also hold bachelor's and master's degrees in law, and I spent several years working in customer-facing hospitality.
+## Selected projects
 
-**Main tools:** Python · TypeScript · JavaScript · React · Node.js/Express · SQLite · PostgreSQL (Supabase) · pytest · Streamlit · LLM APIs (OpenRouter, Groq)
+### Multi-Agent Debate Frameworks for Enhanced Truthfulness · MSc dissertation
 
----
+Can five language models answer more questions correctly after debating with each other? I built a Python framework to test this on 300 MMLU-Pro questions. Each model answered independently, then reviewed the other models' anonymised answers and submitted a second answer.
 
-### Multi-Agent Debate Frameworks for Enhanced Truthfulness (MSc dissertation)
+The group's majority vote went from **245 to 255 correct answers out of 300** (81.7% to 85.0%). The result measures the full second round, including both peer input and the opportunity to reconsider.
 
-I built a Python pipeline to compare majority-vote accuracy before and after five language models reviewed one another's answers. Each model first answered 300 MMLU-Pro questions alone, then answered again after seeing the others' anonymous answers. The pipeline handles the API calls, answer parsing, voting, storage and offline scoring against a separate answer key. It has 554 automated tests.
-
-Group accuracy rose from 81.7% to 85.0% on the 300 questions. Round two also gives every model a second attempt, so the gain reflects the whole two-round system, not debate alone.
+The framework handles API calls, answer parsing, voting and scoring. It includes 554 automated tests and a Streamlit viewer for replaying individual debates.
 
 [Code](https://github.com/DmytroHonchar/Dissertation-Multi-Agent-Debates) · [Results report](https://github.com/DmytroHonchar/Dissertation-Multi-Agent-Debates/blob/main/reports/main_experiment_20260923/evaluation_report.md)
 
-### Manos: AI concierge for local services
+### Manos · AI booking assistant
 
-Booking a plumber, electrician or cleaner usually means comparing listings and chasing replies. In Manos, you describe the job in a chat. The concierge (Llama 3.3 70B on Groq) uses tool calls to search providers, show details, create a booking and check its status. Search ranks providers by pgvector similarity and distance. I built it with React, TypeScript and Supabase (Postgres, auth and edge functions). The providers are demo data.
+Describe a job in chat and Manos finds nearby plumbers, electricians or cleaners. You can compare providers, make a booking and check its status in the same conversation. The demo uses sample providers.
+
+I built Manos with React, TypeScript and Supabase. Llama 3.3 70B runs through Groq and calls tools to search for providers, create bookings and check their status. Search ranks providers by how closely they match the request and how near they are to the customer.
 
 [Code](https://github.com/DmytroHonchar/hackathonAI)
 
-### Restaurant websites: Da Gurkha and Momo's
+### Da Gurkha and Momo's · Live restaurant websites
 
-I built and deployed two live restaurant websites in the Liverpool area with Node.js and Express, hosted on Render with custom domains.
+I built and deployed both sites with Node.js and Express on Render. Guests can browse menus and contact either restaurant.
 
-- **Da Gurkha:** a QR ordering flow with email notifications. A table QR code opens a time-limited order page, and each order is emailed to the restaurant, with an optional confirmation for the guest. The site also takes table booking requests. [Live site](https://dagurkhafinedining.com) · [Code](https://github.com/DmytroHonchar/DagGurkhaLiverpool)
-- **Momo's:** menu, contact form and a delivery page that links to Foodbooking and Uber Eats. [Live site](https://momoslvp.com) · [Code](https://github.com/DmytroHonchar/momosliverpool)
+- **Da Gurkha** lets guests send table booking enquiries directly to the restaurant. [Live site](https://dagurkhafinedining.com/) · [Code](https://github.com/DmytroHonchar/DagGurkhaLiverpool)
+- **Momo's** gives guests a choice of ordering through Foodbooking or Uber Eats. [Live site](https://momoslvp.com/) · [Code](https://github.com/DmytroHonchar/momosliverpool)
 
-### Other projects
+## Tools
 
-From one reinforcement learning module ([Code](https://github.com/DmytroHonchar/Lunar_and_chess_ML)):
+- **Languages and web development** · Python, JavaScript, TypeScript, HTML, CSS, React, Flask, Node.js, Express
+- **Data and AI** · MySQL, PostgreSQL, SQLite, Supabase, pgvector, OpenRouter, Groq, Ollama, PyTorch, Streamlit
+- **Testing and deployment** · pytest, Git, GitHub, AWS, Heroku, Render
 
-- **LunarLander-v3:** DQN and Dueling Double DQN agents in PyTorch. Both reach the "solved" score in greedy evaluation on three seeds.
-- **Chess agent:** rules reduce each position to a short list of candidate moves, and a local LLM (Llama 3.1 8B through Ollama) picks one.
+## Other projects
+
+- **LunarLander** · Trained DQN and Dueling Double DQN agents in PyTorch. Both reached the solved score in evaluations across three random seeds.
+- **Chess agent** · Built an agent that uses rules to shortlist legal moves, then asks a local Llama model running through Ollama to choose one.
+
+[Code for both projects](https://github.com/DmytroHonchar/Lunar_and_chess_ML)
+
+## Background
+
+Alongside my computer science work, I hold bachelor's and master's degrees in law from Ukraine and have several years of customer-facing hospitality experience in the UK.
