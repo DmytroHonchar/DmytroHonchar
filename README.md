@@ -1,6 +1,8 @@
 # Hi, I'm Dmytro Honchar 👋
 
-I'm a software developer based in Liverpool. For my MSc in Computer Science at the University of Liverpool, I built a system where five language models debate each other's answers. I also built Manos, an AI assistant that finds local service providers and creates bookings through chat, and I've built and launched websites for two restaurant clients. I use Codex and Claude Code in my daily workflow.
+I'm a software developer based in Liverpool. For my MSc in Computer Science at the University of Liverpool, I built a system where five language models debate each other's answers. I also built Manos, an AI assistant that finds local service providers and creates bookings through chat, and I've built and launched websites for two restaurant clients. I use Codex and Claude Code in my daily workflow. 
+
+I hold bachelor's and master's degrees in law from Ukraine. 
 
 I'm looking for a junior or graduate software development role in the UK, particularly in full-stack development, backend engineering or applied AI. I'm open to remote and hybrid work.
 
@@ -48,4 +50,4 @@ I built and deployed both sites with Node.js and Express on Render. Guests can b
 
 ## Background
 
-Alongside my computer science work, I hold bachelor's and master's degrees in law from Ukraine and have several years of customer-facing hospitality experience in the UK.
+Alongside my computer science work and law degree, I have several years of customer-facing hospitality experience in the UK.
